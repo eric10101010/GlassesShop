@@ -1,0 +1,31 @@
+.question {
+    h3 {
+        font-size: $text-l;
+        font-weight: bold;
+    }
+    &Head {
+        h4 {
+            font-size: $text-l;
+            font-weight: bold;
+            @include mobile {
+                font-size: $text-m;
+            }
+        }
+    }
+    &Box {
+        margin-bottom: 80px;
+        @include pad {
+            padding: 0 $text-l;
+        }
+        @include mobile {
+            padding: 0 13.5px;
+            margin-bottom: $text-5xl;
+        }
+    }
+    &List {
+        @include mobile {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
